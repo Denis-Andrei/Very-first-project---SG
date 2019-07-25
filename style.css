@@ -1,0 +1,271 @@
+body{
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /*OR instead of first 3 lines -- font: 15px/1.5 Arial, Helvetica, sans-serif;*/ 
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* -------------------------Global------------------------- */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+/* -------------------------Header------------------------- */
+
+header{
+    background-color: #ffffff;
+    
+}
+nav{
+    
+    text-align: right;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: #744126 3px solid; 
+}
+.logo{
+    float: left;
+    height: 100px; 
+    margin-left: 40px;  
+}
+.menu{
+    margin: 0 30px 0 0;
+    clear: right;
+}
+.menu a{
+    
+    text-decoration: none;
+    color: #744126;
+    margin: 0 10px;
+    line-height: 60px;
+    font-size: 20px;
+    
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    line-height: 100px;
+    display: none;
+    color: #744126;
+    width: 20px;
+    float: right;
+    
+}
+#hamburger-menu{
+    display: none;
+}
+.menu a:hover{
+    color: #FDB768;
+}
+
+
+/* -------------------------SHOWCASE------------------------- */
+.showcase{
+    text-align: center;
+    color: white;
+    min-height: 600px;
+    background: url('./img/imageedit_5_5971519537.gif') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.showcase h1{
+    margin-top: 100px 0 10px 0;
+    font-size: 55px;
+    
+}
+.showcase p{
+    font-size: 18px;
+    
+}
+
+/* -------------------------BOXES------------------------- */
+
+.boxes{
+    padding: 30px 0 30px 0;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+.box-info{
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+/* -------------------------FURNIZORI------------------------- */
+.furnizori{
+    border-top: rgb(221, 220, 220) 1px solid;
+    text-align: center;
+}
+.furnizori img{
+    padding: 0 30px 0 30px;
+}
+
+/* -------------------------FOOTER------------------------- */
+
+.box-footer{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: left;  
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #342309;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* Despre noi */
+.main-about{
+    text-align: center;
+    padding: 20px;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* Servicii */
+.box-services{
+    padding: 20px;
+    width: 80%;  
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+.box-services img{
+    float: left;
+    padding: 40px;
+}
+.box-services:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* Contact */
+
+.contact-us{
+    background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), url('./img/contactus.jpg');
+    background-size: auto;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+    width: 50%;
+    border: black 1px solid;
+    
+}
+.contact-us h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+.contact-us h2{
+    font-size: 16px;
+}
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input{
+    height: 45px;
+}
+form .submit{
+    background-color: #744126;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+form .submit:hover{
+    background-color: #FDB768;
+    cursor:pointer;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* Media Query */
+
+@media only screen and (max-width: 768px){
+    
+    .boxes,
+    .box-footer{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        color: #744126;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        position: relative;
+        background-color: #ffffff;
+        border-top: #744126 3px solid;
+        
+        
+    }
+    .menu a{
+        display: block;
+        border-bottom: #744126 1px solid;
+        margin: 0;
+        color: #744126;    
+    }
+    #hamburger-menu:checked + .menu{
+        display: block;
+    }
+    .box-info {
+        background-color: white;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .box-footer{
+        border-bottom: #583c10 1px solid;
+        margin-top: 10px;
+    }
+    .box-services img{
+        float: none;
+    }
+}
